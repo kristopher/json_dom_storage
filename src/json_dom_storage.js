@@ -1,5 +1,5 @@
 (function() {
-  if(window.Storage === undefined) {
+  if(Storage === undefined) {
     throw new NotImplementedError('DOM Storge')
   }
   
@@ -8,7 +8,6 @@
   } 
   
   Storage.prototype.setJSON = function(key, value) {    
-    this[key] = JSON.stringify(value);
-    return value;
+    this.setItem(key, JSON.stringify(value);
   }
-}())
+}.call(window))
