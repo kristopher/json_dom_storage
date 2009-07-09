@@ -4,10 +4,10 @@
   }
   
   Storage.prototype.getJSON = function(key) {
-    return JSON.parse(this[key]);
+    return JSON.parse(this.getItem(key));
   } 
   
   Storage.prototype.setJSON = function(key, value) {    
-    this.setItem(key, JSON.stringify(value);
+    this.setItem(key, JSON.stringify(value));
   }
-}.call(window))
+}).call(window)
