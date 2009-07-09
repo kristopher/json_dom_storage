@@ -1,0 +1,57 @@
+h1. JSON Dom Storage
+
+Adds getJSON and setJSON to the Dom Storage prototype.
+
+h2. Example  
+
+<pre>
+<code>
+
+localStorage.setJSON('user', {
+  name: 'kris'
+})
+
+localStorage.getJSON('users')  #=> { name: 'kris' }
+
+</code>
+</pre>
+
+Or with the sessionStore 
+
+<pre>
+</code>  
+
+sessionStorage.setJSON('user', {
+  name: 'kris'
+})
+
+sessionStorage.getJSON('users')  #=> { name: 'kris' }
+  
+</code>
+</pre>
+
+h2. Building
+
+<pre>
+<code>
+rake dist
+</code>
+</pre>
+
+h2. Running the specs
+
+<pre>
+<code>
+rake spec
+</code>
+</pre>
+
+h2. Dependencies
+
+"json2":http://www.json.org/json2.js
+
+A minified version of json2 is package with the dist.
+
+h2. Homepage
+
+"http://github.com/kristopher/json_dom_storage":http://github.com/kristopher/json_dom_storage
