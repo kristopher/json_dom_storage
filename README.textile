@@ -6,13 +6,11 @@ h2. Example
 
 <pre>
 <code>
-
 localStorage.setJSON('user', {
   name: 'kris'
 })
 
 localStorage.getJSON('users')  #=> { name: 'kris' }
-
 </code>
 </pre>
 
@@ -20,13 +18,11 @@ Or with the sessionStore
 
 <pre>
 </code>  
-
 sessionStorage.setJSON('user', {
   name: 'kris'
 })
 
 sessionStorage.getJSON('users')  #=> { name: 'kris' }
-  
 </code>
 </pre>
 
